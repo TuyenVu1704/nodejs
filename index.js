@@ -1,9 +1,10 @@
 // Import 
-const express = require('express')
-const cors = require('cors')
+import express from 'express'
+import cors from 'cors'
+import initRoutes from './src/routes'
 require('dotenv').config()
-const initRoutes = require('./src/routes')
 
+require('./connection_database')
 // Tạo con App 
 const app = express()
 
